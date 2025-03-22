@@ -3,8 +3,8 @@
 
 # Define variables
 date=`date +"%Y-%m-%d-%H-%M-%S"`
-nginx_backup_dir="/home/mike/backups/nginx_backup_$date.tar.gz"
-log_file="/home/mike/logs/backup_"$date".log"
+nginx_backup_dir="//backups/nginx_backup_$date.tar.gz"
+log_file="/home/avinjay/log/nginx_backup_"$date".log"
 
 tar -czf "$nginx_backup_dir" /etc/nginx/ /usr/share/nginx/html/
 

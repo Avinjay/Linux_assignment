@@ -3,8 +3,8 @@
 
 # Define variables
 date=`date +"%Y-%m-%d-%H-%M-%S"`
-apache_backup_dir="/home/sarah/backups/apache_backup_$date.tar.gz"
-log_file="/home/sarah/log/backup_"$date".log"
+apache_backup_dir="/backups/apache_backup_$date.tar.gz"
+log_file="/home/avinjay/log/apache_backup_"$date".log"
 
 tar -czf "$apache_backup_dir" /etc/apache2/ /var/www/html/
 
